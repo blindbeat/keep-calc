@@ -1,9 +1,12 @@
-@import "./utils.css";
-
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--background);
   font-family: Montserrat, Roboto, -apple-system, sans-serif;
   color: var(--text-dark);
+}
+
+.shadow {
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1))
 }

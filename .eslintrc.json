@@ -29,6 +29,12 @@
         "namedComponents": "arrow-function"
       }
     ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ],
     "no-restricted-exports": "off",
     "import/export": "off"
   }

@@ -1,0 +1,33 @@
+.label {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    place-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.container:first-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container:last-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.name {
+    flex-grow: 5;
+    flex-shrink: 1;
+}
+
+.checkbox {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
