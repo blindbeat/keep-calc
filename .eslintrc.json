@@ -29,6 +29,7 @@
         "namedComponents": "arrow-function"
       }
     ],
+    "no-restricted-exports": "off",
     "import/export": "off"
   }
 }

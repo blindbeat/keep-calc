@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./header/header"
+import styles from "./layout.module.css"
 
 interface Props {
   children: React.ReactNode
@@ -8,7 +9,7 @@ interface Props {
 const Layout = ({ children }: Props) => (
   <div>
     <Header />
-    {children}
+    <main className={styles.container}>{children}</main>
   </div>
 )
 
