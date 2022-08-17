@@ -13,19 +13,17 @@ const CHECKBOX_ARRAY: string[] = [
 ]
 
 const Cha2ds2Vasc = () => (
-  <>
+  <form className={classNames(styles.form, 'shadow')}>
     <TitleCard
       title="CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk"
       description="Calculates stroke risk for patients with atrial fibrillation, possibly better than the CHADS₂ Score."
     />
-    <form className={classNames(styles.form, 'shadow')}>
-      {CHECKBOX_ARRAY.map((name) => (
-        <Checkbox key={name} name={name} />
-      ))}
-      <Radio name="age" options={['<50', '50-60', '>60']} />
-      <Radio name="sex" options={['male', 'female']} />
-    </form>
-  </>
+    {CHECKBOX_ARRAY.map((name) => (
+      <Checkbox key={name} name={name} />
+    ))}
+    <Radio name="age" options={['<50', '50-60', '>60']} />
+    <Radio name="sex" options={['male', 'female']} />
+  </form>
 )
 
 export default Cha2ds2Vasc

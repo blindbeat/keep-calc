@@ -9,15 +9,19 @@ interface Props {
 const Checkbox = ({ name }: Props) => (
   <label className={classNames(styles.label)}>
     <div
-      className={classNames(commonStyles.formPart, styles.wrapper, styles.name)}
+      className={classNames(
+        commonStyles.formPart,
+        styles.wrapper,
+        styles.titleWrapper
+      )}
     >
-      <span>{name}</span>
+      <span className={commonStyles.title}>{name}</span>
     </div>
     <div
       className={classNames(
         commonStyles.formPart,
         styles.wrapper,
-        styles.checkbox
+        styles.checkboxWrapper
       )}
     >
       <input type="checkbox" />

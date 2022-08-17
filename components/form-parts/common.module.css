@@ -4,4 +4,11 @@
     background-color: white;
     border-radius: var(--radius);
   }
+
+  .title {
+    margin: 0;
+  }
+  .title:first-letter {
+    text-transform: capitalize;
+  }
 }

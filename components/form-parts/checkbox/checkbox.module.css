@@ -1,7 +1,7 @@
 .label {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  gap: 3px;
+  gap: var(--gap-sm);
 }
 
 .wrapper {
@@ -20,11 +20,6 @@
   border-bottom-left-radius: var(--radius-sm);
 }
 
-.name {
+.titleWrapper {
   justify-content: start;
-  text-transform: capitalize;
-}
-
-.checkbox input {
-  transform: scale(1.375);
 }

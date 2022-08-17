@@ -9,7 +9,15 @@ interface Props {
 
 const Radio = ({ name, options }: Props) => (
   <div className={styles.wrapper}>
-    <p className={classNames(commonStyles.formPart, styles.title)}>{name}</p>
+    <p
+      className={classNames(
+        commonStyles.formPart,
+        commonStyles.title,
+        styles.title
+      )}
+    >
+      {name}
+    </p>
     <div className={classNames(commonStyles.formPart, styles.optionsContainer)}>
       {options.map((option) => (
         <label key={option} className={styles.label}>
