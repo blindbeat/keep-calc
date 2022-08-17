@@ -1,3 +1,10 @@
+@import 'sanitize.css';
+@import 'sanitize.css/forms.css';
+
+* {
+  accent-color: var(--accent);
+}
+
 html,
 body {
   padding: 0;

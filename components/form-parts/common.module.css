@@ -1,0 +1,7 @@
+@layer commonForm {
+  .formPart {
+    padding: 1rem;
+    background-color: white;
+    border-radius: var(--radius);
+  }
+}

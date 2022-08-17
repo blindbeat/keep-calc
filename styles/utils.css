@@ -3,4 +3,7 @@
   --accent: hsl(360 40% 22%);
   --accent-light: hsl(360 60% 86%);
   --background: hsl(360 15% 95%);
+
+  --radius: 15px;
+  --radius-sm: 5px;
 }

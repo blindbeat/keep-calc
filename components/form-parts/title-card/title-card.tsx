@@ -1,4 +1,6 @@
-import styles from './Title-card.module.css'
+import classNames from 'classnames'
+import commonStyles from '../common.module.css'
+import styles from './title-card.module.css'
 
 interface Props {
   title: string
@@ -6,7 +8,7 @@ interface Props {
 }
 
 const TitleCard = ({ title, description }: Props) => (
-  <div className={styles.card}>
+  <div className={classNames(commonStyles.formPart, styles.card)}>
     <h2>{title}</h2>
     <p>{description}</p>
   </div>
