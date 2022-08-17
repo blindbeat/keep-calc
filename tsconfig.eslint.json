@@ -1,3 +1,4 @@
+// for proper eslint cli flow
 {
   "extends": "./tsconfig.json",
   "include": ["**/*.ts", "**/*.tsx", "**/*.js"]

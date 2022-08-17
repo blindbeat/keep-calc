@@ -1,1 +1,1 @@
-export { default } from "./cha2ds2-vasc"
+export { default } from './cha2ds2-vasc'

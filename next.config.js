@@ -5,8 +5,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "/cha2ds2-vasc",
+        source: '/',
+        destination: '/cha2ds2-vasc',
         permanent: true,
       },
     ]

@@ -1,4 +1,6 @@
 :root {
-    --text-dark: #1e1e1e;
-    --background: #f4f0f0;
+  --text-dark: #1e1e1e;
+  --accent: hsl(360 40% 22%);
+  --accent-light: hsl(360 60% 86%);
+  --background: hsl(360 15% 95%);
 }

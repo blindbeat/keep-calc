@@ -1,13 +1,13 @@
 .header {
-    background-color: white;
-    padding: 1rem;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 32px;
+  background-color: white;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
 }
 
 .menu {
-    font-size: inherit;
+  font-size: inherit;
 }
