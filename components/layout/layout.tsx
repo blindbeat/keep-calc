@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import Header from './header/Header'
 import styles from './layout.module.css'
 
@@ -9,7 +10,9 @@ interface Props {
 const Layout = ({ children }: Props) => (
   <div>
     <Header />
-    <main className={styles.container}>{children}</main>
+    <main className={classNames(styles.container, styles.main)}>
+      {children}
+    </main>
   </div>
 )
 

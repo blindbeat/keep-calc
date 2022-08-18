@@ -20,5 +20,5 @@ input[type='radio'] {
 }
 
 .shadow {
-  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 0 15px rgba(10, 10, 10, 0.15));
 }

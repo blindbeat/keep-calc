@@ -1,13 +1,15 @@
 import classNames from 'classnames'
+import { UseFormRegister } from 'react-hook-form'
 import styles from './radio.module.css'
 import commonStyles from '../common.module.css'
 
 interface Props {
   name: string
   options: string[]
+  register: UseFormRegister<any>
 }
 
-const Radio = ({ name, options }: Props) => (
+const Radio = ({ name, options, register }: Props) => (
   <div className={styles.wrapper}>
     <p
       className={classNames(
@@ -22,7 +24,7 @@ const Radio = ({ name, options }: Props) => (
       {options.map((option) => (
         <label key={option} className={styles.label}>
           <span>{option}</span>
-          <input name={name} type="radio" />
+          <input type="radio" value={option} {...register(name)} />
         </label>
       ))}
     </div>

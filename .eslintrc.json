@@ -21,6 +21,10 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "no-restricted-exports": "off",
+    "no-restricted-syntax": "off",
+    "import/export": "off",
+    "no-plusplus": "off",
     "@typescript-eslint/no-unused-vars": ["warn"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
@@ -36,8 +40,6 @@
       {
         "assert": "either"
       }
-    ],
-    "no-restricted-exports": "off",
-    "import/export": "off"
+    ]
   }
 }

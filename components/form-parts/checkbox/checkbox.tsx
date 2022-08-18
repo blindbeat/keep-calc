@@ -1,12 +1,15 @@
 import classNames from 'classnames'
+import { UseFormRegister } from 'react-hook-form'
 import styles from './checkbox.module.css'
 import commonStyles from '../common.module.css'
 
 interface Props {
   name: string
+  description: string
+  register: UseFormRegister<any>
 }
 
-const Checkbox = ({ name }: Props) => (
+const Checkbox = ({ name, description, register }: Props) => (
   <label className={classNames(styles.label)}>
     <div
       className={classNames(
@@ -15,7 +18,7 @@ const Checkbox = ({ name }: Props) => (
         styles.titleWrapper
       )}
     >
-      <span className={commonStyles.title}>{name}</span>
+      <span className={commonStyles.title}>{description}</span>
     </div>
     <div
       className={classNames(
@@ -24,7 +27,7 @@ const Checkbox = ({ name }: Props) => (
         styles.checkboxWrapper
       )}
     >
-      <input type="checkbox" />
+      <input type="checkbox" {...register(name)} />
     </div>
   </label>
 )
