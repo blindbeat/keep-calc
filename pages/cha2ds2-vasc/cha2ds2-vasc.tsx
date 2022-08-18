@@ -4,8 +4,13 @@ import TitleCard from 'components/form-parts/title-card/title-card'
 import Radio from 'components/form-parts/radio/radio'
 import Result from 'components/form-parts/result'
 import { useForm } from 'react-hook-form'
+import {
+  calcScore,
+  CHECKBOX_ARRAY,
+  InputOptions,
+  RADIO_ARRAY,
+} from 'utils/cha2ds2-vasc'
 import styles from './cha2ds2-vasc.module.css'
-import { calcScore, CHECKBOX_ARRAY, InputOptions, RADIO_ARRAY } from './utils'
 
 const Cha2ds2Vasc = () => {
   const { register, watch } = useForm<InputOptions>()

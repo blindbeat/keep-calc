@@ -1,6 +1,6 @@
 import classNames from 'classnames'
+import { generateResult } from 'utils/cha2ds2-vasc'
 import styles from './result.module.css'
-import { generateResult } from '../../../pages/cha2ds2-vasc/utils'
 
 interface Props {
   score: number
