@@ -19,7 +19,7 @@ const Cha2ds2Vasc = () => {
   const result = Object.keys(formValues).length ? calcScore(formValues) : null
 
   return (
-    <>
+    <div className={styles.container}>
       <form className={classNames(styles.form, 'shadow')}>
         <TitleCard
           title="CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk"
@@ -42,8 +42,8 @@ const Cha2ds2Vasc = () => {
           />
         ))}
       </form>
-      {result !== null && <Result score={result} />}
-    </>
+      <Result score={result} />
+    </div>
   )
 }
 export default Cha2ds2Vasc

@@ -3,16 +3,25 @@ import { generateResult } from 'utils/cha2ds2-vasc'
 import styles from './result.module.css'
 
 interface Props {
-  score: number
+  score: number | null
 }
 
-const Result = ({ score }: Props) => {
-  const { risk } = generateResult(score)
-  return (
-    <div className={classNames(styles.container, 'shadow')}>
-      <span className={styles.score}>{score}</span>
-      <span>{`${risk}% annual stroke risk cancer in year`}</span>
-    </div>
-  )
-}
+const Result = ({ score }: Props) => (
+  <div
+    className={classNames(
+      styles.container,
+      'shadow',
+      score === null && 'invisible'
+    )}
+  >
+    {score !== null && (
+      <>
+        <span className={styles.score}>{score}</span>
+        <span>{`${
+          generateResult(score).risk
+        }% annual stroke risk in year`}</span>
+      </>
+    )}
+  </div>
+)
 export default Result
