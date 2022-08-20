@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import { generateResult } from 'utils/cha2ds2-vasc'
 import styles from './result.module.css'
+import commonFormStyles from '../form-parts.module.css'
 
 interface Props {
   score: number | null
@@ -9,6 +10,7 @@ interface Props {
 const Result = ({ score }: Props) => (
   <div
     className={classNames(
+      commonFormStyles.formPart,
       styles.container,
       'shadow',
       score === null && 'invisible'
@@ -17,9 +19,7 @@ const Result = ({ score }: Props) => (
     {score !== null && (
       <>
         <span className={styles.score}>{score}</span>
-        <span>{`${
-          generateResult(score).risk
-        }% annual stroke risk in year`}</span>
+        <span>{`${generateResult(score).risk}% annual stroke risk`}</span>
       </>
     )}
   </div>

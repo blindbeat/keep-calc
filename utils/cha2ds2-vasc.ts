@@ -6,7 +6,7 @@ interface CheckboxOption {
 type RadioOption = {
   name: string
   options: {
-    title: string
+    optionName: string
     score: number
   }[]
 }
@@ -31,16 +31,16 @@ export const RADIO_ARRAY: RadioOption[] = [
   {
     name: 'age',
     options: [
-      { title: '<65', score: 0 },
-      { title: '65-74', score: 1 },
-      { title: '>74', score: 2 },
+      { optionName: '<65', score: 0 },
+      { optionName: '65-74', score: 1 },
+      { optionName: '>74', score: 2 },
     ],
   },
   {
     name: 'sex',
     options: [
-      { title: 'female', score: 1 },
-      { title: 'male', score: 0 },
+      { optionName: 'female', score: 1 },
+      { optionName: 'male', score: 0 },
     ],
   },
 ]
@@ -64,7 +64,7 @@ export const calcScore = (inputs: InputOptions): number | null => {
     } else if (radioNames.includes(key)) {
       const { score } = RADIO_ARRAY.find(
         (radio) => radio.name === key
-      )!.options.find((option) => option.title === value)!
+      )!.options.find((option) => option.optionName === value)!
       result += score
     }
   }

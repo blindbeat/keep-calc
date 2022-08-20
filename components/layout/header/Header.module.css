@@ -11,6 +11,11 @@
   font-size: 32px;
 }
 
-.menu {
+.header span {
   font-size: inherit;
+}
+
+.logo {
+  color: var(--accent);
+  font-family: Hammersmith One, sans-serif;
 }

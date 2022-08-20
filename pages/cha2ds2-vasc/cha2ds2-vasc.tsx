@@ -29,7 +29,7 @@ const Cha2ds2Vasc = () => {
           <Radio
             key={name}
             name={name}
-            options={options.map((option) => option.title)}
+            optionNames={options.map((option) => option.optionName)}
             register={register}
           />
         ))}

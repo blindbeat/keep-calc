@@ -1,27 +1,29 @@
 import classNames from 'classnames'
 import { UseFormRegister } from 'react-hook-form'
 import styles from './radio.module.css'
-import commonStyles from '../common.module.css'
+import commonFormStyles from '../form-parts.module.css'
 
 interface Props {
   name: string
-  options: string[]
+  optionNames: string[]
   register: UseFormRegister<any>
 }
 
-const Radio = ({ name, options, register }: Props) => (
+const Radio = ({ name, optionNames, register }: Props) => (
   <div className={styles.wrapper}>
-    <p
+    <span
       className={classNames(
-        commonStyles.formPart,
-        commonStyles.title,
+        commonFormStyles.formPart,
+        commonFormStyles.title,
         styles.title
       )}
     >
       {name}
-    </p>
-    <div className={classNames(commonStyles.formPart, styles.optionsContainer)}>
-      {options.map((option) => (
+    </span>
+    <div
+      className={classNames(commonFormStyles.formPart, styles.optionsContainer)}
+    >
+      {optionNames.map((option) => (
         <label key={option} className={styles.label}>
           <span>{option}</span>
           <input type="radio" value={option} {...register(name)} />

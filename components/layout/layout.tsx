@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
-import Header from './header/Header'
 import styles from './layout.module.css'
+import Header from './header'
 
 interface Props {
   children: React.ReactNode

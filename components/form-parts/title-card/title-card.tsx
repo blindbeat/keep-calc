@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import commonStyles from '../common.module.css'
+import commonFormStyles from '../form-parts.module.css'
 import styles from './title-card.module.css'
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const TitleCard = ({ title, description }: Props) => (
-  <div className={classNames(commonStyles.formPart, styles.card)}>
+  <div className={classNames(commonFormStyles.formPart, styles.card)}>
     <h2>{title}</h2>
     <p>{description}</p>
   </div>

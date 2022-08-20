@@ -8,8 +8,8 @@ const Header = () => (
     <header
       className={classNames(styles.header, layoutStyles.container, 'shadow')}
     >
-      <span className={styles.menu}>keep.treat</span>
-      <span className={classNames('material-icons', styles.menu)}>menu</span>
+      <span className={styles.logo}>keep.treat</span>
+      <span className="material-icons">menu</span>
     </header>
   </div>
 )
