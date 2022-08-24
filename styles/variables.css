@@ -3,11 +3,14 @@
   --accent: hsl(360 40% 22%);
   --accent-light: hsl(360 60% 86%);
   --background: hsl(360 15% 95%);
-  --border: 1px solid hsla(0 0% 50% / 0.15);
 
-  --radius: 15px;
+  --padding-sm: 0.8rem;
+  --padding: 1.2rem;
+  --padding-lg: 1.6rem;
+
   --radius-sm: 5px;
+  --radius: 15px;
 
-  --gap: 10px;
   --gap-sm: 3px;
+  --gap: 10px;
 }

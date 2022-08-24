@@ -1,9 +1,8 @@
 @layer commonForm {
   .formPart {
-    padding: 0.9rem;
+    padding: var(--padding-sm) var(--padding);
     background-color: white;
     border-radius: var(--radius);
-    border: var(--border);
   }
 
   .title {

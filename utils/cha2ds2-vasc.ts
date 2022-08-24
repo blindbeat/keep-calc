@@ -56,7 +56,8 @@ export const calcScore = (inputs: InputOptions): number | null => {
 
   let result = 0
   for (const [key, value] of Object.entries(inputs)) {
-    if (checkboxNames.includes(key) && value) {
+    if (checkboxNames.includes(key)) {
+      if (!value) continue
       const { score } = CHECKBOX_ARRAY.find(
         (checkbox) => checkbox.name === key
       )!
@@ -66,6 +67,8 @@ export const calcScore = (inputs: InputOptions): number | null => {
         (radio) => radio.name === key
       )!.options.find((option) => option.optionName === value)!
       result += score
+    } else {
+      throw new Error('unknown input')
     }
   }
 

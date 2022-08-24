@@ -12,14 +12,16 @@ const Result = ({ score }: Props) => (
     className={classNames(
       commonFormStyles.formPart,
       styles.container,
-      'shadow',
+      'shadow-strong',
       score === null && 'invisible'
     )}
   >
     {score !== null && (
       <>
         <span className={styles.score}>{score}</span>
-        <span>{`${generateResult(score).risk}% annual stroke risk`}</span>
+        <span className={styles.brief}>{`${
+          generateResult(score).risk
+        }% annual\n stroke risk`}</span>
       </>
     )}
   </div>

@@ -1,3 +1,7 @@
 .card {
   background-color: var(--accent-light);
 }
+
+.title {
+  margin-top: 0;
+}

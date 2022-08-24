@@ -9,7 +9,7 @@ interface Props {
 
 const TitleCard = ({ title, description }: Props) => (
   <div className={classNames(commonFormStyles.formPart, styles.card)}>
-    <h2>{title}</h2>
+    <h2 className={styles.title}>{title}</h2>
     <p>{description}</p>
   </div>
 )

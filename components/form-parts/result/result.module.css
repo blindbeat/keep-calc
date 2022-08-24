@@ -1,15 +1,13 @@
 .container {
   position: fixed;
-  width: 60%;
   bottom: 1rem;
-  right: 1rem;
-  padding: 0.7rem 1rem;
+  right: 1.5rem;
+  padding: 0.6rem var(--padding-lg);
   border-radius: 50px;
   background-color: var(--accent-light);
   display: flex;
   gap: 1rem;
   align-items: flex-end;
-  line-height: 1;
   transition: opacity 0.15s;
 }
 
@@ -21,6 +19,11 @@
 
 .score {
   font-family: Roboto, sans-serif;
-  line-height: 0.85;
+  line-height: 1;
   font-size: 2.5rem;
+}
+
+.brief {
+  line-height: 1.2;
+  white-space: pre-line;
 }
